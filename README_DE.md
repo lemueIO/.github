@@ -9,11 +9,11 @@
     <strong>🇺🇦 <a href="README_UA.md">Українська</a></strong>
   </p>
 
-  <a href="https://github.com/lemueIO/.github/releases" target="_blank">![Version](https://img.shields.io/badge/Version-1.2.0-blue?style=for-the-badge&logo=semanticrelease)</a>
+  <a href="https://github.com/lemueIO/.github/releases" target="_blank">![Version](https://img.shields.io/badge/Version-1.3.0-blue?style=for-the-badge&logo=semanticrelease)</a>
   <a href="https://github.com/lemueIO" target="_blank">![Organization](https://img.shields.io/badge/Organisation-lemueIO-blue?style=for-the-badge&logo=github)</a>
   <a href="https://github.com/orgs/lemueIO/people" target="_blank">![Members](https://img.shields.io/badge/Mitglieder-5-orange?style=for-the-badge&logo=groups)</a>
   <a href="https://github.com/orgs/lemueIO/repositories" target="_blank">![Projects](https://img.shields.io/badge/Projekte-2-green?style=for-the-badge&logo=git)</a>
-  <a href="https://github.com/lemueIO/about" target="_blank">![Status](https://img.shields.io/badge/Status-Aktiv-success?style=for-the-badge&logo=statuspage)</a>
+  <a href="https://github.com/lemueIO/.github" target="_blank">![Status](https://img.shields.io/badge/Status-Aktiv-success?style=for-the-badge&logo=statuspage)</a>
   <a href="https://github.com/lemueIO" target="_blank">![Topic](https://img.shields.io/badge/Thema-Threat_Intelligence-blue?style=for-the-badge&logo=target)</a>
   <a href="https://github.com/lemueIO" target="_blank">![Visibility](https://img.shields.io/badge/Sichtbarkeit-Deep_Web-blueviolet?style=for-the-badge&logo=torbrowser)</a>
   <a href="https://opensource.org/licenses/MIT" target="_blank">![License](https://img.shields.io/badge/Lizenz-MIT-yellow?style=for-the-badge&logo=opensourceinitiative)</a>
