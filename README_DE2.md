@@ -47,7 +47,7 @@ Dieses Programm sammelt Informationen über Gefahren. Es schickt diese Daten an 
 ## 👥 Das Team & lemueIO <a name="team"></a>
 
 <div align="center">
-  <img src="assets/lemueio_fun.png" width="40" alt="lemueIO Fun Logo">
+  <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/lemueio_fun.png" width="40" alt="lemueIO Fun Logo">
   <p><strong>lemueIO</strong> (<a href="https://io.lemue.org" target="_blank">io.lemue.org</a>) gehört zu <a href="https://lemue.org" target="_blank">lemue.org</a> - eine Organisation, die Spaß an Technik hat.</p>
 </div>
 

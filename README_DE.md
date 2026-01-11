@@ -48,7 +48,7 @@ Das zentrale Middleware-System von lemueIO. Honey-API aggregiert Sicherheitsdate
 ## 👥 Das Team & lemueIO <a name="team"></a>
 
 <div align="center">
-  <img src="assets/lemueio_fun.png" width="40" alt="lemueIO Fun Logo">
+  <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/lemueio_fun.png" width="40" alt="lemueIO Fun Logo">
   <p><strong>lemueIO</strong> (<a href="https://io.lemue.org" target="_blank">io.lemue.org</a>) ist von <a href="https://lemue.org" target="_blank">lemue.org</a> - the fun organisation</p>
 </div>
 
@@ -56,11 +56,11 @@ Das zentrale Middleware-System von lemueIO. Honey-API aggregiert Sicherheitsdate
 
 | Mitglied | Fokus & Expertise |
 | :--- | :--- |
-| <img src="assets/derlemue.png" width="50"><br>**<a href="https://github.com/derlemue" target="_blank">derlemue</a>** | **Lead & Infrastruktur.** Gründer von lemueIO. Schöpfer der Kernarchitektur von Honey-Scan und Honey-API. Spezialist für Security-Automatisierung. |
-| <img src="assets/pup.png" width="50"><br>**<a href="https://github.com/Cipher-Pup" target="_blank">Pup</a>** | **Crypto & Protokolle.** Senior Encryption Specialist & Guardian of the Digital Veil. Sorgt für die Integrität unserer Kommunikation und Datenströme. |
-| <img src="assets/m3l.png" width="50"><br>**<a href="https://github.com/m3l1nda" target="_blank">m3l</a>** | **Security Research.** Keeper & Guard of the Internet. Analysiert Angriffsmuster und stellt sicher, dass unser Code und unsere Daten integer bleiben. |
-| <img src="assets/ph0x.png" width="50"><br>**<a href="https://github.com/osint-inc" target="_blank">Ph0x</a>** | **OSINT & Recon.** Data Hunter in den binären Schatten. Spezialisiert auf die Identifizierung von Bedrohungsakteuren und Deep-Web-Analysen. |
-| <img src="assets/sunshi.png" width="50"><br>**<a href="https://github.com/orgs/lemueIO/people/sunshikun" target="_blank">Sunshi</a>** | **Automatisierung & Support.** Sorgt für den reibungslosen Ablauf unserer Projekte und unterstützt die Entwicklung hilfreicher Tools für das Team. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/derlemue.png" width="50"><br>**<a href="https://github.com/derlemue" target="_blank">derlemue</a>** | **Lead & Infrastruktur.** Gründer von lemueIO. Schöpfer der Kernarchitektur von Honey-Scan und Honey-API. Spezialist für Security-Automatisierung. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/pup.png" width="50"><br>**<a href="https://github.com/Cipher-Pup" target="_blank">Pup</a>** | **Crypto & Protokolle.** Senior Encryption Specialist & Guardian of the Digital Veil. Sorgt für die Integrität unserer Kommunikation und Datenströme. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/m3l.png" width="50"><br>**<a href="https://github.com/m3l1nda" target="_blank">m3l</a>** | **Security Research.** Keeper & Guard of the Internet. Analysiert Angriffsmuster und stellt sicher, dass unser Code und unsere Daten integer bleiben. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/ph0x.png" width="50"><br>**<a href="https://github.com/osint-inc" target="_blank">Ph0x</a>** | **OSINT & Recon.** Data Hunter in den binären Schatten. Spezialisiert auf die Identifizierung von Bedrohungsakteuren und Deep-Web-Analysen. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/sunshi.png" width="50"><br>**<a href="https://github.com/orgs/lemueIO/people/sunshikun" target="_blank">Sunshi</a>** | **Automatisierung & Support.** Sorgt für den reibungslosen Ablauf unserer Projekte und unterstützt die Entwicklung hilfreicher Tools für das Team. |
 
 ---
 

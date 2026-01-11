@@ -48,7 +48,7 @@ Honey-Scan — це потужний форк HFish, оптимізований 
 ## 👥 Команда та lemueIO <a name="team"></a>
 
 <div align="center">
-  <img src="assets/lemueio_fun.png" width="40" alt="lemueIO Fun Logo">
+  <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/lemueio_fun.png" width="40" alt="lemueIO Fun Logo">
   <p><strong>lemueIO</strong> (<a href="https://io.lemue.org" target="_blank">io.lemue.org</a>) створено <a href="https://lemue.org" target="_blank">lemue.org</a> - the fun organisation</p>
 </div>
 
@@ -56,11 +56,11 @@ Honey-Scan — це потужний форк HFish, оптимізований 
 
 | Учасник | Фокус та експертиза |
 | :--- | :--- |
-| <img src="assets/derlemue.png" width="50"><br>**<a href="https://github.com/derlemue" target="_blank">derlemue</a>** | **Керівник та інфраструктура.** Засновник lemueIO. Творець основної архітектури Honey-Scan та Honey-API. Спеціаліст з автоматизації безпеки. |
-| <img src="assets/pup.png" width="50"><br>**<a href="https://github.com/Cipher-Pup" target="_blank">Pup</a>** | **Криптографія та протоколи.** Старший спеціаліст із шифрування та Охоронець Цифрової Завіси. Забезпечує цілісність наших комунікацій. |
-| <img src="assets/m3l.png" width="50"><br>**<a href="https://github.com/m3l1nda" target="_blank">m3l</a>** | **Дослідження безпеки.** Зберігач та охоронець інтернету. Аналізує паттерни атак та гарантує цілісність коду. |
-| <img src="assets/ph0x.png" width="50"><br>**<a href="https://github.com/osint-inc" target="_blank">Ph0x</a>** | **OSINT та розвідка.** Мисливець за даними в бінарних тінях. Спеціалізується на ідентифікації суб'єктів загроз. |
-| <img src="assets/sunshi.png" width="50"><br>**<a href="https://github.com/orgs/lemueIO/people/sunshikun" target="_blank">Sunshi</a>** | **Автоматизація та підтримка.** Забезпечує безперебійну роботу наших проєктів та розробку допоміжних інструментів. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/derlemue.png" width="50"><br>**<a href="https://github.com/derlemue" target="_blank">derlemue</a>** | **Керівник та інфраструктура.** Засновник lemueIO. Творець основної архітектури Honey-Scan та Honey-API. Спеціаліст з автоматизації безпеки. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/pup.png" width="50"><br>**<a href="https://github.com/Cipher-Pup" target="_blank">Pup</a>** | **Криптографія та протоколи.** Старший спеціаліст із шифрування та Охоронець Цифрової Завіси. Забезпечує цілісність наших комунікацій. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/m3l.png" width="50"><br>**<a href="https://github.com/m3l1nda" target="_blank">m3l</a>** | **Дослідження безпеки.** Зберігач та охоронець інтернету. Аналізує паттерни атак та гарантує цілісність коду. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/ph0x.png" width="50"><br>**<a href="https://github.com/osint-inc" target="_blank">Ph0x</a>** | **OSINT та розвідка.** Мисливець за даними в бінарних тінях. Спеціалізується на ідентифікації суб'єктів загроз. |
+| <img src="https://raw.githubusercontent.com/lemueIO/.github/main/assets/sunshi.png" width="50"><br>**<a href="https://github.com/orgs/lemueIO/people/sunshikun" target="_blank">Sunshi</a>** | **Автоматизація та підтримка.** Забезпечує безперебійну роботу наших проєктів та розробку допоміжних інструментів. |
 
 ---
 

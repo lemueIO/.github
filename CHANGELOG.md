@@ -5,6 +5,12 @@ All notable changes to the **lemueIO** about repository will be documented in th
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2026-01-11
+
+### Fixed
+- **Image Rendering**: Switched to absolute URLs for all assets to ensure correct rendering in organization profiles and cross-repository views.
+- **Organization Profile**: Synchronized all documentation to the `.github` repository.
+
 ## [1.1.0] - 2026-01-11
 
 ### Added
