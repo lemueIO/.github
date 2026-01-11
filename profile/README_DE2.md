@@ -61,6 +61,15 @@ Dieses Programm sammelt Informationen über Gefahren. Es schickt diese Daten an 
 
 ---
 
+## 🎮 lemueCraft Creative+
+
+Unser entspannter Freebuild Community-Server für Minecraft 1.20.4 (Java & Bedrock Crossplay).
+
+*   **Wiki & Infos:** [wiki.s.lemue.org](https://wiki.s.lemue.org)
+*   **Server IP:** `mc.lemue.org` (Java) / Bot `cr4zych1cken952` (Bedrock)
+*   **Karte:** [Live Karte](https://wiki.s.lemue.org/wiki:servermap)
+*   **Discord:** [Community beitreten](https://discord.gg/a8q9WQCccT)
+
 ## 📊 Sicherheits-Liste <a name="feed"></a>
 
 Wir zeigen unsere Ergebnisse. Es gibt eine Liste mit gefährlichen Adressen im Internet:

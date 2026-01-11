@@ -64,6 +64,15 @@ Das zentrale Middleware-System von lemueIO. Honey-API aggregiert Sicherheitsdate
 
 ---
 
+## 🎮 lemueCraft Creative+
+
+Unser entspannter Freebuild Community-Server für Minecraft 1.20.4 (Java & Bedrock Crossplay).
+
+*   **Wiki & Infos:** [wiki.s.lemue.org](https://wiki.s.lemue.org)
+*   **Server IP:** `mc.lemue.org` (Java) / Bot `cr4zych1cken952` (Bedrock)
+*   **Karte:** [Live Karte](https://wiki.s.lemue.org/wiki:servermap)
+*   **Discord:** [Community beitreten](https://discord.gg/a8q9WQCccT)
+
 ## 📊 Security Feed <a name="feed"></a>
 
 Wir teilen unsere Erkenntnisse mit der Community. Unser Live-Feed bietet Echtzeit-Daten zu aktuellen Bedrohungen:
