@@ -3,10 +3,10 @@
   <h1>lemueIO 🛡️</h1>
   <p><strong>Wir machen Gefahren im Internet sichtbar.</strong></p>
   <p>
-    <strong>🇬🇧 <a href="README.md">English</a></strong> | 
-    <strong>🇩🇪 <a href="README_DE.md">Deutsch</a></strong> | 
-    <strong>🇩🇪 <a href="README_DE2.md">Deutsch (einfache Sprache)</a></strong> | 
-    <strong>🇺🇦 <a href="README_UA.md">Українська</a></strong>
+    <strong>🇬🇧 <a href="https://github.com/lemueIO/.github/blob/main/profile/README.md">English</a></strong> | 
+    <strong>🇩🇪 <a href="https://github.com/lemueIO/.github/blob/main/profile/README_DE.md">Deutsch</a></strong> | 
+    <strong>🇩🇪 <a href="https://github.com/lemueIO/.github/blob/main/profile/README_DE2.md">Deutsch (einfache Sprache)</a></strong> | 
+    <strong>🇺🇦 <a href="https://github.com/lemueIO/.github/blob/main/profile/README_UA.md">Українська</a></strong>
   </p>
 
   <a href="https://github.com/lemueIO/.github/releases" target="_blank">![Version](https://img.shields.io/badge/Version-1.3.0-blue?style=for-the-badge&logo=semanticrelease)</a>
