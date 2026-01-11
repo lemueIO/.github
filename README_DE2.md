@@ -9,7 +9,7 @@
     <strong>🇺🇦 <a href="README_UA.md">Українська</a></strong>
   </p>
 
-  <a href="https://github.com/lemueIO/about/releases" target="_blank">![Version](https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge&logo=semanticrelease)</a>
+  <a href="https://github.com/lemueIO/.github/releases" target="_blank">![Version](https://img.shields.io/badge/Version-1.2.0-blue?style=for-the-badge&logo=semanticrelease)</a>
   <a href="https://github.com/lemueIO" target="_blank">![Organization](https://img.shields.io/badge/Organisation-lemueIO-blue?style=for-the-badge&logo=github)</a>
   <a href="https://github.com/orgs/lemueIO/people" target="_blank">![Members](https://img.shields.io/badge/Mitglieder-5-orange?style=for-the-badge&logo=groups)</a>
   <a href="https://github.com/orgs/lemueIO/repositories" target="_blank">![Projects](https://img.shields.io/badge/Projekte-2-green?style=for-the-badge&logo=git)</a>
@@ -80,7 +80,7 @@ Dieses System ist gut geschützt. Wenn jemand versucht, unseren Humor zu hacken,
 Hast du Fragen?
 - **Web:** <a href="https://lemue.org" target="_blank">lemue.org</a>
 - **GitHub:** <a href="https://github.com/lemueIO" target="_blank">lemueIO</a>
-- **Direkter Kontakt:** <a href="https://github.com/lemueIO/.github/issues/new?title=Contact+Request" target="_blank">GitHub Kontakt & Feedback</a>
+- **Direkter Kontakt:** <a href="https://github.com/lemueIO/.github/discussions/new/choose" target="_blank">GitHub Kontakt & Feedback</a>
 
 <div align="center">
   Gemacht mit ❤️ vom lemueIO Team

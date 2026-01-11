@@ -4,11 +4,11 @@ Thank you for your interest in **lemueIO**. To ensure a streamlined and transpar
 
 ## 📬 How to Contact Us
 
-If you have questions, feedback, or want to collaborate, please use the **Issues** section of our central [.github](https://github.com/lemueIO/.github) repository.
+If you have questions, feedback, or want to collaborate, please use the **Discussions** section of our central [.github](https://github.com/lemueIO/.github) repository.
 
-### [Create a Contact Request](https://github.com/lemueIO/.github/issues/new?title=Contact+Request)
-1. Navigate to the [.github Issues](https://github.com/lemueIO/.github/issues) tab.
-2. Click on "New Issue".
+### [Create a Contact Request](https://github.com/lemueIO/.github/discussions/new/choose)
+1. Navigate to the [.github Discussions](https://github.com/lemueIO/.github/discussions) tab.
+2. Click on "New discussion" or choose a category.
 3. Use a clear title (e.g., `[Contact] Your Subject`).
 4. Describe your request in detail.
 
