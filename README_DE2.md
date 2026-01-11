@@ -80,7 +80,7 @@ Dieses System ist gut geschützt. Wenn jemand versucht, unseren Humor zu hacken,
 Hast du Fragen?
 - **Web:** <a href="https://lemue.org" target="_blank">lemue.org</a>
 - **GitHub:** <a href="https://github.com/lemueIO" target="_blank">lemueIO</a>
-- **Direkter Kontakt:** <a href="https://github.com/lemueIO/about/issues/new?title=Contact+Request" target="_blank">GitHub Kontakt & Feedback</a>
+- **Direkter Kontakt:** <a href="https://github.com/lemueIO/.github/issues/new?title=Contact+Request" target="_blank">GitHub Kontakt & Feedback</a>
 
 <div align="center">
   Gemacht mit ❤️ vom lemueIO Team

@@ -85,7 +85,7 @@ We share our insights with the community. Our live feed provides real-time data 
 Have questions about our data or want to collaborate?
 - **Web:** <a href="https://lemue.org" target="_blank">lemue.org</a>
 - **GitHub:** <a href="https://github.com/lemueIO" target="_blank">lemueIO</a>
-- **Direct Contact:** <a href="https://github.com/lemueIO/about/issues/new?title=Contact+Request" target="_blank">GitHub Contact & Feedback</a>
+- **Direct Contact:** <a href="https://github.com/lemueIO/.github/issues/new?title=Contact+Request" target="_blank">GitHub Contact & Feedback</a>
 
 <div align="center">
   Made with ❤️ by lemueIO Team

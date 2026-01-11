@@ -85,7 +85,7 @@ Honey-Scan — це потужний форк HFish, оптимізований 
 Маєте запитання або хочете долучитися до співпраці?
 - **Web:** <a href="https://lemue.org" target="_blank">lemue.org</a>
 - **GitHub:** <a href="https://github.com/lemueIO" target="_blank">lemueIO</a>
-- **Прямий контакт:** <a href="https://github.com/lemueIO/about/issues/new?title=Contact+Request" target="_blank">GitHub Контакт та зворотній зв'язок</a>
+- **Прямий контакт:** <a href="https://github.com/lemueIO/.github/issues/new?title=Contact+Request" target="_blank">GitHub Контакт та зворотній зв'язок</a>
 
 <div align="center">
   Зроблено з ❤️ командою lemueIO
