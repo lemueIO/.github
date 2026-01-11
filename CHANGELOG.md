@@ -34,25 +34,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Fun Section**: Dedicated area for the "lemueIO - the fun organisation" logo and mission.
 - **Section Anchors**: Direct internal linking for all major sections.
 
-### Changed
+### 🛠️ Changed
 - **README.md Overhaul**: Entirely rewritten and translated to English as the master template.
 - **Link Optimization**: All external links now open in new windows (`target="_blank"`).
 - **Visual Polish**: Adjusted logo sizes and removed redundant separators for a cleaner, premium look.
 - **Organization Branding**: Refined the `lemueIO` branding elements and logo hierarchy.
 
-### Fixed
+### 🐛 Fixed
 - English content in the primary `README.md`.
 - Redundant nesting of links in Shields.io badges.
 
 ---
 
 ## [1.0.0] - 2026-01-11
-### Added
+### ✨ Added
 - Initial overhaul of the baseline README.
 - Basic team and organization info.
 
 ---
 
 ## [0.1.0] - 2026-01-05
-### Added
+### ✨ Added
 - Initial repository setup.
