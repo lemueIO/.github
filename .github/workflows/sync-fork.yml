@@ -3,6 +3,7 @@ name: Sync Fork
 on:
 
   workflow_dispatch:
+  workflow_call:
 
 # FIX 1: Concurrency verhindert, dass zwei Sync-Jobs für dasselbe Repo gleichzeitig laufen
 concurrency:
