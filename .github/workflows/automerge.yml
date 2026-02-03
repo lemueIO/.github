@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     # Prüft, ob der Ersteller des PRs Mitglied der Organisation ist
     # 'MEMBER' umfasst alle Mitglieder der Org, in der das Repo liegt
-    if: github.event.pull_request.author_association == 'MEMBER' && github.repository != 'lemueIO/.github'
+    if: (github.event.pull_request.author_association == 'MEMBER' || github.event.pull_request.author_association == 'OWNER') && github.repository != 'lemueIO/.github'
     steps:
       - name: Enable Automerge
         uses: peter-evans/enable-pull-request-automerge@v3
