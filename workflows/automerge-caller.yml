@@ -1,0 +1,21 @@
+name: Automerge for Org Members
+
+on:
+  pull_request_review:
+    types: [submitted]
+  check_run:
+    types: [completed]
+
+jobs:
+  automerge-org:
+    runs-on: ubuntu-latest
+    # Prüft, ob der Ersteller des PRs Mitglied der Organisation ist
+    # 'MEMBER' umfasst alle Mitglieder der Org, in der das Repo liegt
+    if: github.event.pull_request.author_association == 'MEMBER'
+    steps:
+      - name: Enable Automerge
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.ORG_MEMBER_CHECK_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          merge-method: squash
