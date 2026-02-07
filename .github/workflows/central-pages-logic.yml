@@ -20,6 +20,9 @@ concurrency:
 jobs:
   deploy-logic:
     runs-on: [self-hosted, vps-debian]
+    permissions:
+      contents: write   # Zum Schreiben des Codes
+      workflows: write  # ZWINGEND: Zum Updaten der .yml Dateien in .github/workflows/
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
