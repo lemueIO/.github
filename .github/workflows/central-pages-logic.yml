@@ -25,7 +25,9 @@ jobs:
   deploy-logic:
     runs-on: ${{ inputs.runs_on }}
     permissions:
-      contents: write   # Zum Schreiben des Codes
+      contents: write
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
