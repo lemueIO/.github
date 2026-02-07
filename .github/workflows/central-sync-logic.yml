@@ -1,16 +1,18 @@
-name: Central Sync Logic
+name: Central Logic
 
 on:
   workflow_call:
-    inputs:
-      upstream_url:
-        required: true
-        type: string
+    # Inputs...
 
 jobs:
-  sync-logic:
+  run-logic: # Beispiel-Name des Jobs
     runs-on: [self-hosted, vps-debian]
-    if: github.repository != 'lemueIO/.github' && github.repository != 'derlemue/villa-kunterbunt'
+    # BERECHTIGUNGEN NUR HIER DEFINIEREN
+    permissions:
+      contents: write
+      workflows: write
+      pull-requests: write # Falls für Automerge benötigt
+    if: github.repository != 'lemueIO/.github'
     steps:
       - name: 🧹 Pre-Cleanup
         run: rm -rf ./* ./.git || true
