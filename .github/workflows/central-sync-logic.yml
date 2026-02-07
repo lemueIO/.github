@@ -10,7 +10,6 @@ jobs:
     # BERECHTIGUNGEN NUR HIER DEFINIEREN
     permissions:
       contents: write
-      workflows: write
       pull-requests: write # Falls für Automerge benötigt
     if: github.repository != 'lemueIO/.github'
     steps:
