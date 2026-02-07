@@ -7,10 +7,15 @@ on:
         description: 'The URL of the upstream repository'
         required: true
         type: string
+      runs_on:
+        description: 'Runner label or array'
+        required: false
+        type: string
+        default: 'ubuntu-latest'
 
 jobs:
   run-logic: # Beispiel-Name des Jobs
-    runs-on: [self-hosted, vps-debian]
+    runs-on: ${{ inputs.runs_on }}
     # BERECHTIGUNGEN NUR HIER DEFINIEREN
     permissions:
       contents: write
