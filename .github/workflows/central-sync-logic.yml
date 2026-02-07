@@ -8,15 +8,13 @@ on:
         type: string
         default: "https://github.com/derlemue/villa-kunterbunt.git"
 
-permissions:
-  contents: write
-
 jobs:
   sync-logic:
     runs-on: [self-hosted, vps-debian]
+    # Hier müssen alle benötigten Rechte gebündelt stehen
     permissions:
-      contents: write   # Zum Schreiben des Codes
-      workflows: write  # ZWINGEND: Zum Updaten der .yml Dateien in .github/workflows/
+      contents: write
+      workflows: write
     if: github.repository != 'lemueIO/.github' && github.repository != 'derlemue/villa-kunterbunt'
     
     steps:
@@ -44,7 +42,6 @@ jobs:
           git fetch upstream main
           
           echo "⚡ Merging Upstream (Safe Mode)..."
-          # Merge bewahrt deine lokalen Caller-Dateien im Fork!
           git merge upstream/main --no-edit || echo "Keine Änderungen oder Konflikt"
           
           git push origin main
@@ -52,5 +49,5 @@ jobs:
       - name: ✨ Post-Cleanup
         if: always()
         run: |
-          rm -rf "${{ github.workspace }}"/*
-          docker system prune -f --volumes || true
+          # Nutze sudo falls Berechtigungsprobleme auf dem VPS bestehen
+          rm -rf "${{ github.workspace }}"/* || true
