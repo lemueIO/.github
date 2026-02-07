@@ -1,9 +1,7 @@
-# DATEI: lemueIO/.github/.github/workflows/central-sync-logic.yml
 name: Central Sync Logic
 
 on:
   workflow_call:
-    # Damit können wir steuern, ob z.B. Force-Push erlaubt ist
     inputs:
       upstream_url:
         required: true
@@ -16,13 +14,11 @@ permissions:
 jobs:
   sync-logic:
     runs-on: [self-hosted, vps-debian]
-    # Verhindert Endlosschleifen
     if: github.repository != 'lemueIO/.github' && github.repository != 'derlemue/villa-kunterbunt'
     
     steps:
-      - name: Cleanup Pre-Run
+      - name: 🧹 Pre-Cleanup
         run: |
-          echo "🧹 Cleaning Workspace before start..."
           rm -rf ./* || true
           rm -rf ./.git || true
 
@@ -41,21 +37,17 @@ jobs:
       - name: Sync with Upstream
         run: |
           UPSTREAM="${{ inputs.upstream_url }}"
-          echo "🔗 Connecting to Upstream: $UPSTREAM"
-          
           git remote add upstream "$UPSTREAM" || git remote set-url upstream "$UPSTREAM"
           git fetch upstream main
           
-          echo "⚡ Merging Upstream..."
-          # MERGE statt RESET schützt deine lokale Caller-Datei!
-          git merge upstream/main --no-edit || exit 0 
+          echo "⚡ Merging Upstream (Safe Mode)..."
+          # Merge bewahrt deine lokalen Caller-Dateien im Fork!
+          git merge upstream/main --no-edit || echo "Keine Änderungen oder Konflikt"
           
-          echo "🚀 Pushing to Origin..."
           git push origin main
 
-      - name: Cleanup Post-Run
+      - name: ✨ Post-Cleanup
         if: always()
         run: |
-          echo "✨ Final Cleanup on VPS..."
           rm -rf "${{ github.workspace }}"/*
           docker system prune -f --volumes || true
