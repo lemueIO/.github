@@ -7,6 +7,10 @@ on:
         required: false
         default: '.'
         type: string
+      runs_on:
+        required: false
+        default: 'ubuntu-latest'
+        type: string
 
 permissions:
   contents: read
@@ -19,10 +23,9 @@ concurrency:
 
 jobs:
   deploy-logic:
-    runs-on: [self-hosted, vps-debian]
+    runs-on: ${{ inputs.runs_on }}
     permissions:
       contents: write   # Zum Schreiben des Codes
-      workflows: write  # ZWINGEND: Zum Updaten der .yml Dateien in .github/workflows/
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
