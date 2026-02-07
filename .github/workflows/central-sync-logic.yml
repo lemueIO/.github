@@ -6,24 +6,14 @@ on:
       upstream_url:
         required: true
         type: string
-        default: "https://github.com/derlemue/villa-kunterbunt.git"
-
-# HIER DARF KEIN GLOBALER PERMISSIONS-BLOCK STEHEN
 
 jobs:
   sync-logic:
     runs-on: [self-hosted, vps-debian]
-    # Die Berechtigungen gehören AUSSCHLIESSLICH hier in den Job
-    permissions:
-      contents: write
-      workflows: write
     if: github.repository != 'lemueIO/.github' && github.repository != 'derlemue/villa-kunterbunt'
-    
     steps:
       - name: 🧹 Pre-Cleanup
-        run: |
-          rm -rf ./* || true
-          rm -rf ./.git || true
+        run: rm -rf ./* ./.git || true
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,9 +21,15 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      # ... restliche Steps (Configure Git, Sync, Push) ...
-
-      - name: ✨ Post-Cleanup
-        if: always()
+      - name: Configure Git
         run: |
-          rm -rf "${{ github.workspace }}"/* || true
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Sync with Upstream
+        run: |
+          git remote add upstream "${{ inputs.upstream_url }}" || true
+          git fetch upstream main
+          git merge upstream/main --no-edit || echo "Kein Merge nötig"
+          git push origin main
