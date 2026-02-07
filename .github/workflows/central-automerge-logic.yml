@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # Zum Schreiben des Codes
+      pull-requests: write # ZWINGEND: Zum Mergen von PRs
     if: |
       contains(fromJson('["derlemue", "m3l1nda", "osint-inc", "Cipher-Pup"]'), github.event.pull_request.user.login) && 
       github.repository != 'lemueIO/.github'
