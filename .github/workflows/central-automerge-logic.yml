@@ -1,0 +1,19 @@
+name: Central Automerge Logic
+
+on:
+  workflow_call:
+
+jobs:
+  automerge-logic:
+    runs-on: ubuntu-latest
+    if: |
+      contains(fromJson('["derlemue", "m3l1nda", "osint-inc", "Cipher-Pup"]'), github.event.pull_request.user.login) && 
+      github.repository != 'lemueIO/.github'
+
+    steps:
+      - name: Enable Automerge
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          merge-method: squash
