@@ -2,7 +2,11 @@ name: Central Logic
 
 on:
   workflow_call:
-    # Inputs...
+    inputs:
+      upstream_url:
+        description: 'The URL of the upstream repository'
+        required: true
+        type: string
 
 jobs:
   run-logic: # Beispiel-Name des Jobs
