@@ -6,6 +6,9 @@ on:
 jobs:
   automerge-logic:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Zum Schreiben des Codes
+      workflows: write  # ZWINGEND: Zum Updaten der .yml Dateien in .github/workflows/
     if: |
       contains(fromJson('["derlemue", "m3l1nda", "osint-inc", "Cipher-Pup"]'), github.event.pull_request.user.login) && 
       github.repository != 'lemueIO/.github'
