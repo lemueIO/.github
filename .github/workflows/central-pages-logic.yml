@@ -1,11 +1,9 @@
-# DATEI: lemueIO/.github/.github/workflows/central-pages-logic.yml
 name: Central Pages Logic
 
 on:
   workflow_call:
     inputs:
       publish_dir:
-        description: 'Der Ordner, der veröffentlicht werden soll (z.B. "." oder "./site")'
         required: false
         default: '.'
         type: string
@@ -21,26 +19,20 @@ concurrency:
 
 jobs:
   deploy-logic:
-    # Nutzt deinen Org-Runner
     runs-on: [self-hosted, vps-debian]
-    
     environment:
       name: github-pages
-      # Wichtig: URL aus dem Output des Steps holen
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: 🧹 Pre-Cleanup
-        run: |
-          rm -rf "${{ github.workspace }}"/* || true
+        run: rm -rf "${{ github.workspace }}"/* || true
 
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Configure Git Safe Directory
-        run: |
-          # Zwingend für Docker-Runner
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -48,7 +40,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Der Pfad kommt aus dem Input (Standard: Root '.')
           path: ${{ inputs.publish_dir }}
 
       - name: Deploy to GitHub Pages
