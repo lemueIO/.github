@@ -14,6 +14,9 @@ permissions:
 jobs:
   sync-logic:
     runs-on: [self-hosted, vps-debian]
+    permissions:
+      contents: write   # Zum Schreiben des Codes
+      workflows: write  # ZWINGEND: Zum Updaten der .yml Dateien in .github/workflows/
     if: github.repository != 'lemueIO/.github' && github.repository != 'derlemue/villa-kunterbunt'
     
     steps:
