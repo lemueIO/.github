@@ -1,55 +1,61 @@
-name: Sync Fork
+# DATEI: lemueIO/.github/.github/workflows/central-sync-logic.yml
+name: Central Sync Logic
 
 on:
-
-  workflow_dispatch:
   workflow_call:
-
-# FIX 1: Concurrency verhindert, dass zwei Sync-Jobs für dasselbe Repo gleichzeitig laufen
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+    # Damit können wir steuern, ob z.B. Force-Push erlaubt ist
+    inputs:
+      upstream_url:
+        required: true
+        type: string
+        default: "https://github.com/derlemue/villa-kunterbunt.git"
 
 permissions:
   contents: write
 
 jobs:
-  sync:
+  sync-logic:
     runs-on: [self-hosted, vps-debian]
-    if: github.repository != 'derlemue/villa-kunterbunt' && github.repository != 'lemueIO/.github'
+    # Verhindert Endlosschleifen
+    if: github.repository != 'lemueIO/.github' && github.repository != 'derlemue/villa-kunterbunt'
     
     steps:
-      - name: Clean Workspace
+      - name: Cleanup Pre-Run
         run: |
-          rm -rf ./*
-          rm -rf ./.git
+          echo "🧹 Cleaning Workspace before start..."
+          rm -rf ./* || true
+          rm -rf ./.git || true
 
       - name: Checkout
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-          clean: true
 
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - name: Sync with Upstream and Restore Config
+      - name: Sync with Upstream
         run: |
-          UPSTREAM_URL="https://github.com/derlemue/villa-kunterbunt.git"
+          UPSTREAM="${{ inputs.upstream_url }}"
+          echo "🔗 Connecting to Upstream: $UPSTREAM"
           
-          echo "Upstream Remote einrichten..."
-          git remote add upstream "$UPSTREAM_URL" || git remote set-url upstream "$UPSTREAM_URL"
-          git fetch upstream
+          git remote add upstream "$UPSTREAM" || git remote set-url upstream "$UPSTREAM"
+          git fetch upstream main
           
-          echo "Reset auf Upstream (Hard Reset)..."
-          # Wir zwingen den lokalen Stand auf das Original. 
-          # Damit wird die History sauber, aber Ihre Config ist kurzzeitig weg.
-          git checkout main
-          git reset --hard upstream/main
+          echo "⚡ Merging Upstream..."
+          # MERGE statt RESET schützt deine lokale Caller-Datei!
+          git merge upstream/main --no-edit || exit 0 
           
-          echo "Force Push zu Origin..."
-          # Force Push ist notwendig, da wir die History neu geschrieben haben
-          git push origin main --force
+          echo "🚀 Pushing to Origin..."
+          git push origin main
+
+      - name: Cleanup Post-Run
+        if: always()
+        run: |
+          echo "✨ Final Cleanup on VPS..."
+          rm -rf "${{ github.workspace }}"/*
+          docker system prune -f --volumes || true
