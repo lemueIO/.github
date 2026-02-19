@@ -6,15 +6,18 @@ on:
       runs_on:
         required: false
         type: string
-        description: 'Runner label to use (e.g. ubuntu-latest or self-hosted)'
+        description: 'Runner label'
         default: 'ubuntu-latest'
     outputs:
       has_changes:
         description: "Whether changes were committed"
-        value: ${{ jobs.update.outputs.has_changes }}
+        value: ${{ jobs.update-stats.outputs.has_changes }}
+
+permissions:
+  contents: write
 
 jobs:
-  update:
+  update-stats:
     name: 📊 Update Stats Script
     runs-on: ${{ inputs.runs_on }}
     permissions:
@@ -22,10 +25,16 @@ jobs:
     outputs:
       has_changes: ${{ steps.check.outputs.has_changes }}
     steps:
+      - name: 🧹 Pre-Cleanup
+        run: rm -rf "${{ github.workspace }}"/* || true
+
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Configure Git Safe Directory
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
       - name: Run Update Script
         run: |
@@ -46,3 +55,8 @@ jobs:
             git push
             echo "has_changes=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: ✨ Post-Cleanup
+        if: always()
+        run: |
+          rm -rf "${{ github.workspace }}"/* || true
