@@ -1,0 +1,48 @@
+name: Central Stats Logic
+
+on:
+  workflow_call:
+    inputs:
+      runs_on:
+        required: false
+        type: string
+        description: 'Runner label to use (e.g. ubuntu-latest or self-hosted)'
+        default: 'ubuntu-latest'
+    outputs:
+      has_changes:
+        description: "Whether changes were committed"
+        value: ${{ jobs.update.outputs.has_changes }}
+
+jobs:
+  update:
+    name: 📊 Update Stats Script
+    runs-on: ${{ inputs.runs_on }}
+    permissions:
+      contents: write
+    outputs:
+      has_changes: ${{ steps.check.outputs.has_changes }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Update Script
+        run: |
+          chmod +x scripts/update_stats.sh
+          ./scripts/update_stats.sh
+
+      - name: Commit and Push Changes
+        id: check
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "chore: automated stats update"
+            git push
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
