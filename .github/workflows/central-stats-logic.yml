@@ -43,6 +43,8 @@ jobs:
         run: |
           chmod +x scripts/update_stats.sh
           ./scripts/update_stats.sh
+          chmod +x scripts/generate_calendar_mapping.py
+          ./scripts/generate_calendar_mapping.py
 
       - name: Commit and Push Changes
         id: check
